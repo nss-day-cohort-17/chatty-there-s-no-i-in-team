@@ -5,6 +5,8 @@ var msgRequest = new XMLHttpRequest()
 msgRequest.addEventListener("load", loadMessages)
 msgRequest.open("GET", "messages.json")
 msgRequest.send()
+<<<<<<< HEAD
+=======
 
 // funtion to parse JSON
 function loadMessages (e) {
