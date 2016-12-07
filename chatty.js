@@ -14,7 +14,7 @@ function loadMessages (e) {
 }
 
 //function to populate DOM message content
-var messageContent
+var messageContent;
 for (var i = 0; i < presetMsgs.stockMessages.length; i++) {
   messageContent += `
                     <<div>
@@ -22,6 +22,8 @@ for (var i = 0; i < presetMsgs.stockMessages.length; i++) {
                     </div>
                     `
 console.log(messageContent)
-}
+  }
 
 //Event listener for load event
+
+document.addEventListener()
