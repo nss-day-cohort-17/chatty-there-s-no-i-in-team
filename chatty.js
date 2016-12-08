@@ -30,6 +30,12 @@ function messages (presetMsgs) {
   }
 }
 
+
+// var darkTheme = document.getElementById("cbox1");
+// darkTheme.addEventListener("click", #)
+
+
+
 //Event listener for load event
 //event listener still needs 2nd argument and function
   //for keyboard event
