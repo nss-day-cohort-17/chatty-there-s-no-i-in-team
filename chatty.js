@@ -30,7 +30,13 @@ function messages (presetMsgs) {
   }
 }
 
+//Event listener for dark theme checkbox
+// var darkTheme = document.getElementById("cbox1");
+// darkTheme.addEventListener("click", #)
 
+//Event listener for large text checkbox
+// var largeText = document.getElementById("cbox2");
+// largeText.addEventListener()
 
 
 
