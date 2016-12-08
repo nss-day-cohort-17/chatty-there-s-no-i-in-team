@@ -31,8 +31,7 @@ function messages (presetMsgs) {
 }
 
 
-// var darkTheme = document.getElementById("cbox1");
-// darkTheme.addEventListener("click", #)
+
 
 
 
