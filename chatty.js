@@ -30,9 +30,35 @@ function messages (presetMsgs) {
   }
 }
 
+
+// var darkTheme = document.getElementById("cbox1");
+// darkTheme.addEventListener("click", #)
+
+
+
 //Event listener for load event
 //event listener still needs 2nd argument and function
   //for keyboard event
 
+
 // var existingMessages = document.getElementById("msg1");
 // existingMessages.addEventListener('load', section);
+
+var existingMessages = document.getElementById("msg1");
+existingMessages.addEventListener('');
+
+//Event listener to display new message when enter key is pressed
+document.getElementById("comment").addEventListener('keypress', function(x) {
+   if (x.key === "Enter") {
+      var newComment = document.getElementById("comment")
+      console.log("new Comment", newComment)
+      document.getElementById("msgBox").innerHTML = `
+               <div>
+                  <h3>document.getElementById("comment")</h3>
+               </div>
+               `
+      document.getElementById("comment") = ""
+   }
+})
+
+// funtion and event listener for "Clear all messages" button
