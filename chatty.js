@@ -39,8 +39,6 @@ function messages (presetMsgs) {
 // largeText.addEventListener()
 
 
-
-
 //Event listener for load event
 //event listener still needs 2nd argument and function
   //for keyboard event
@@ -49,21 +47,23 @@ function messages (presetMsgs) {
 // var existingMessages = document.getElementById("msg1");
 // existingMessages.addEventListener('load', section);
 
-var existingMessages = document.getElementById("msg1");
-existingMessages.addEventListener('');
 
 //Event listener to display new message when enter key is pressed
 document.getElementById("comment").addEventListener('keypress', function(x) {
    if (x.key === "Enter") {
-      var newComment = document.getElementById("comment")
+      var newComment = document.getElementById("comment").value
       console.log("new Comment", newComment)
-      document.getElementById("msgBox").innerHTML = `
+      document.getElementById("message_box").innerHTML += `
                <div>
-                  <h3>document.getElementById("comment")</h3>
+                  <h3>${newComment}</h3>
+                  <button>Delete</button>
                </div>
                `
-      document.getElementById("comment") = ""
+      document.getElementById("comment").value = ""
    }
 })
 
 // funtion and event listener for "Clear all messages" button
+
+
+var clearAll = document.getElementById("clear", )
