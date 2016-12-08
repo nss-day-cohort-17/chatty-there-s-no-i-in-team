@@ -67,6 +67,8 @@ document.getElementById("clear").addEventListener("click", function() {
 //   if ()
 // }
 
-document.getElementById("message_box").addEventListener("click", function(e) {
-  console.dir(e.target)
+document.querySelector("body").addEventListener("click", function(event) {
+  if (event.target.tagName.toLowerCase() === "button") {
+      event.target.parentElement.remove()
+    }
 })
