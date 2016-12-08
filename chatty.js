@@ -22,6 +22,7 @@ function messages (presetMsgs) {
       messageContent += `
                         <div>
                           <h3 id="msg${i}">${presetMsgs.stockMessages[i].content}</h3>
+                          <button id=clear${i}>Delete</button>
                         </div>
                         `
     document.getElementById("message_box").innerHTML = messageContent;
