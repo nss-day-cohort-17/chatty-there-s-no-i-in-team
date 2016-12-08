@@ -24,7 +24,7 @@ function messages (presetMsgs) {
                           <h3 id="msg${i}">${presetMsgs.stockMessages[i].content}</h3>
                         </div>
                         `
-    document.getElementById("msgBox").innerHTML = messageContent;
+    document.getElementById("message_box").innerHTML = messageContent;
     console.log(messageContent)
   }
 }
