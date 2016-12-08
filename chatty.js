@@ -7,7 +7,28 @@ msgRequest.open("GET", "messages.json")
 msgRequest.send()
 
 // funtion to parse JSON
+var presetMsgs
 function loadMessages (e) {
-   var presetMsgs = JSON.parse(e.target.responseText)
+   presetMsgs = JSON.parse(e.target.responseText)
    console.log(presetMsgs)
 }
+
+//function to populate DOM message content
+
+function messages (messageContent) {
+for (var i = 0; i < presetMsgs.stockMessages.length; i++) {
+  messageContent += `
+                    <<div>
+                        <h3 id="msg${i}">${data.stockMessages[i].content}</h3>
+                    </div>
+                    `
+console.log(messageContent)
+  }
+}
+
+//Event listener for load event
+//event listener still needs 2nd argument and function
+  //for keyboard event
+
+var existingMessages = document.getElementById("msg1");
+existingMessages.addEventListener('');
