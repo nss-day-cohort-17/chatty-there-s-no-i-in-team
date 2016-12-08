@@ -14,7 +14,8 @@ function loadMessages (e) {
 }
 
 //function to populate DOM message content
-var messageContent;
+
+function messages (messageContent) {
 for (var i = 0; i < presetMsgs.stockMessages.length; i++) {
   messageContent += `
                     <<div>
@@ -23,7 +24,11 @@ for (var i = 0; i < presetMsgs.stockMessages.length; i++) {
                     `
 console.log(messageContent)
   }
+}
 
 //Event listener for load event
+//event listener still needs 2nd argument and function
+  //for keyboard event
 
-document.addEventListener()
+var existingMessages = document.getElementById("msg1");
+existingMessages.addEventListener('');
