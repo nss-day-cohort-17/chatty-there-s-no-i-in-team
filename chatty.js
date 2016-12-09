@@ -61,6 +61,7 @@ document.querySelector("body").addEventListener("click", function(event) {
   if (event.target.tagName.toLowerCase() === "button") {
       event.target.parentElement.remove()
     }
+})
 
 // function and event listener for "Clear all messages" button
 
