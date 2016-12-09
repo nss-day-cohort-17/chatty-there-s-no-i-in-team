@@ -1,5 +1,56 @@
+
+
 #navbar {
 
+}
+
+#message_box {
+  border: 2px solid #034b80;
+  text-align: left;
+  padding: 1.1%;
+  height: 400px;
+  background-color: #989895;
+  flex: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #034b80;
+  display: flex;
+  flex-direction: column;
+}
+
+.darktheme {
+  background-color: #034b80;
+  color: #e7ec0d;
+}
+
+.largetext {
+  font-size: 30px;
+}
+
+nav {
+   display: block;
+}
+
+#comment {
+   flex-grow: 3;
+}
+
+/*logo styling*/
+#logo {
+   float: right;
+}
+
+#logo h3 {
+   font-size: 2em;
+   font-family: 'Leckerli One', cursive;
+}
+
+#logo img {
+   max-height: 120px;
+   border-radius: 75px;
+   border: 3px solid black;
 }
 
 #header {
