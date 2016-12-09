@@ -1,3 +1,32 @@
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+nav {
+   display: block;
+}
+
+#comment {
+   flex-grow: 3;
+}
+
+/*logo styling*/
+#logo {
+   float: right;
+}
+
+#logo h3 {
+   font-size: 2em;
+   font-family: 'Leckerli One', cursive;
+}
+
+#logo img {
+   max-height: 120px;
+   border-radius: 75px;
+   border: 3px solid black;
+}
+
 #navbar {
 
 }
@@ -7,5 +36,5 @@
   border: 1px solid black;
   text-align: left;
   padding: 1.1%;
-  height: 400px;
+  flex: 100%;
 }
