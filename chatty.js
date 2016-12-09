@@ -57,7 +57,7 @@ document.getElementById("clear").addEventListener("click", function() {
 })
 
 //function and listener for individual message delete buttons
-document.querySelector("body").addEventListener("click", function(event) {
+document.querySelector("section").addEventListener("click", function(event) {
   if (event.target.tagName.toLowerCase() === "button") {
       event.target.parentElement.remove()
     }
