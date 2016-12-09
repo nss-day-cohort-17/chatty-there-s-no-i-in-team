@@ -52,99 +52,34 @@ document.getElementById("comment").addEventListener('keypress', function(x) {
 
 // function and event listener for "Clear all messages" button
 
-// FUNCTION TO CHANGE TO DARK THEME IF CHECKBOX IS CHECKED:
 
- // var darktheme = document.querySelector("#darktheme_checkbox");
- //  darktheme.addEventListener("click", function() {
 
-// eventlistener on the checkbox change
+// FUNCTION TO CHANGE TO DARKTHEME IF CHECKBOX IS CHECKED
+// AND TOGGLE BACK AND FORTH BETWEEN CHECKED AND UNCHECKED:
+
 document.querySelector("#darktheme_checkbox").addEventListener("change", function (checkEvt) {
   if (checkEvt.target.checked === true) {
-    console.log("you checked the darktheme checkbox")
-    // when the checkbox is checked add the darktheme class to the body
-  //   document.body.className = "darktheme"
-  // }
-  document.body.classList.add("darktheme")
- }
-    // var body = document.body
-    // body.className = "darktheme"
-    // console.log(body)
+    // console.log("you checked the darktheme checkbox")
+    document.body.classList.add("darktheme")
+  }
 
   else {
-    console.log("darktheme box is unchecked")
-    // document.body.className = ""
+    // console.log("darktheme box is unchecked")
     document.body.classList.toggle("darktheme")
-    // when the checkbox is not checked remove the darktheme class from the body
   }
 })
-// FROM JAMES:
- // document.body.classList.add("darktheme")
- // }
 
-//  else {
-//    console.log("darktheme box is unchecked")
-//    document.body.classList.toggle("darktheme")
-//    // when the checkbox is not checked remove the darktheme class from the body
-//  }
-// })
-
-
-
-// FUNCTION TO CHANGE TO LARGE TEXT IF CHECKBOX IS CHECKED:
+// FUNCTION TO CHANGE TO LARGETEXT IF CHECKBOX IS CHECKED
+// AND TOGGLE BACK AND FORTH BETWEEN CHECKED AND UNCHECKED:
 
 document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
   if (checkEvt.target.checked === true) {
-    console.log("you checked the largetext checkbox")
-    // document.body.className = "largetext"
-    document.body.classList.add("largetext")
-
-    if (document.body.className === "darktheme") {
-      // document.body.className = "largetext"
-      document.body.classList.toggle("largetext")
-    }
-
-// // FROM JAMES:
-//     document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
-//  if (checkEvt.target.checked === true) {
-//    console.log("you checked the largetext checkbox")
-//    document.body.classList.add("largetext")
-
-//    if (document.body.className === "darktheme") {
-//      document.body.classList.toggle("largetext")
-
-// DARK + LARGE = DARK ONLY THEN LARGE ONLY
-// LARGE + DARK = LARGE ONLY THEN DARK ONLY
-
-
     // console.log("you checked the largetext checkbox")
-    // console.log(document.body.className)
-    // document.body.className = "largetext"
-    // console.log(document.body.className)
-
+    document.body.classList.add("largetext")
   }
+
   else {
-    console.log("largetext box is unchecked")
-    document.body.className = ""
-    // when the checkbox is not checked remove the darktheme class from the body
+    // console.log("largetext box is unchecked")
+    document.body.classList.toggle("largetext")
   }
 })
-
-  // SAMPLE CODE FROM TREE EXERCISE:
-  // var inputField1 = document.querySelector('#CharacterInput');
-  // inputField1.addEventListener("keypress", function(kbEvt) {
-  //   if (kbEvt.code === 'Enter') {
-  //     if (document.getElementById("CharacterInput").value != "" && document.getElementById("HeightInput").value != "") {
-  //       var myObject = {
-  //       "character": document.getElementById("CharacterInput").value,
-  //       "height":  document.getElementById("HeightInput").value
-  //       }
-  //       tree(myObject)
-  //     }
-  //     else {
-  //       alert("Oops! Both fields must have a value!")
-  //     }
-  //   }
-  // });
-
-  // if (evt.target.checked)
-  // if (document.querySelector("#darktheme_checkbox").checked)
