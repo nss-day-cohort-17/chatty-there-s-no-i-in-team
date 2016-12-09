@@ -7,14 +7,12 @@ msgRequest.open("GET", "messages.json")
 msgRequest.send()
 
 // funtion to parse JSON
-
 function loadMessages (e) {
    var presetMsgs = JSON.parse(e.target.responseText)
    messages(presetMsgs)
 }
 
 //function to populate DOM message content
-
 function messages (presetMsgs) {
   var messageContent = ""
 
@@ -56,17 +54,11 @@ document.getElementById("comment").addEventListener('keypress', function(x) {
 })
 
 // funtion and event listener for "Clear all messages" button
-
 document.getElementById("clear").addEventListener("click", function() {
     document.getElementById("message_box").innerHTML = " ";
 })
 
 //function and listener for individual message delete buttons
-
-// document.getElementById("message_box").addEventListener("click", function() {
-//   if ()
-// }
-
 document.querySelector("body").addEventListener("click", function(event) {
   if (event.target.tagName.toLowerCase() === "button") {
       event.target.parentElement.remove()
