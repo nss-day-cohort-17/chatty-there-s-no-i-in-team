@@ -85,14 +85,14 @@ document.querySelector("#darktheme_checkbox").addEventListener("change", functio
 // FUNCTION TO CHANGE TO LARGETEXT IF CHECKBOX IS CHECKED
 // AND TOGGLE BACK AND FORTH BETWEEN CHECKED AND UNCHECKED:
 
-document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
-  if (checkEvt.target.checked === true) {
-    // console.log("you checked the largetext checkbox")
-    document.body.classList.add("largetext")
-  }
+  document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
+    if (checkEvt.target.checked === true) {
+      // console.log("you checked the largetext checkbox")
+      document.body.classList.add("largetext")
+    }
 
-  else {
-    // console.log("largetext box is unchecked")
-    document.body.classList.toggle("largetext")
-  }
-}
+    else {
+      // console.log("largetext box is unchecked")
+      document.body.classList.toggle("largetext")
+    }
+})
