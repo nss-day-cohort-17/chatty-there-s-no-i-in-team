@@ -5,24 +5,23 @@
 }
 
 #message_box {
-  background: #ececec;
-  border: 1px solid black;
+  border: 2px solid #034b80;
   text-align: left;
   padding: 1.1%;
   height: 400px;
+  background-color: #989895;
 }
 
-
-
 body {
-  background-color: lightblue;
+  background-color: #fff;
+  color: #034b80;
 }
 
 .darktheme {
-  background-color: #000;
-  color: #999;
+  background-color: #034b80;
+  color: #e7ec0d;
 }
 
 .largetext {
-  font-size: 35px;
+  font-size: 30px;
 }
