@@ -1,3 +1,5 @@
+
+
 #navbar {
 
 }
@@ -8,4 +10,19 @@
   text-align: left;
   padding: 1.1%;
   height: 400px;
+}
+
+
+
+body {
+  background-color: lightblue;
+}
+
+.darktheme {
+  background-color: #000;
+  color: #999;
+}
+
+.largetext {
+  font-size: 35px;
 }
