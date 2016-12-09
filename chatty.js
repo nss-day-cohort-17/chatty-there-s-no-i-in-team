@@ -62,29 +62,55 @@ document.querySelector("#darktheme_checkbox").addEventListener("change", functio
   if (checkEvt.target.checked === true) {
     console.log("you checked the darktheme checkbox")
     // when the checkbox is checked add the darktheme class to the body
-    document.body.className = "darktheme"
-  }
+  //   document.body.className = "darktheme"
+  // }
+  document.body.classList.add("darktheme")
+ }
     // var body = document.body
     // body.className = "darktheme"
     // console.log(body)
 
   else {
     console.log("darktheme box is unchecked")
-    document.body.className = ""
+    // document.body.className = ""
+    document.body.classList.toggle("darktheme")
     // when the checkbox is not checked remove the darktheme class from the body
   }
 })
+// FROM JAMES:
+ // document.body.classList.add("darktheme")
+ // }
+
+//  else {
+//    console.log("darktheme box is unchecked")
+//    document.body.classList.toggle("darktheme")
+//    // when the checkbox is not checked remove the darktheme class from the body
+//  }
+// })
+
+
 
 // FUNCTION TO CHANGE TO LARGE TEXT IF CHECKBOX IS CHECKED:
 
 document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
   if (checkEvt.target.checked === true) {
     console.log("you checked the largetext checkbox")
-    document.body.className = "largetext"
+    // document.body.className = "largetext"
+    document.body.classList.add("largetext")
 
     if (document.body.className === "darktheme") {
-      document.body.className = "largetext"
+      // document.body.className = "largetext"
+      document.body.classList.toggle("largetext")
     }
+
+// // FROM JAMES:
+//     document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
+//  if (checkEvt.target.checked === true) {
+//    console.log("you checked the largetext checkbox")
+//    document.body.classList.add("largetext")
+
+//    if (document.body.className === "darktheme") {
+//      document.body.classList.toggle("largetext")
 
 // DARK + LARGE = DARK ONLY THEN LARGE ONLY
 // LARGE + DARK = LARGE ONLY THEN DARK ONLY
