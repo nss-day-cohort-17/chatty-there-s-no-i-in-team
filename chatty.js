@@ -15,7 +15,6 @@ function loadMessages (e) {
 //function to populate DOM message content
 function messages (presetMsgs) {
   var messageContent = ""
-
       for (var i = 0; i < presetMsgs.stockMessages.length; i++) {
       messageContent += `
                         <div>
@@ -35,7 +34,6 @@ function messages (presetMsgs) {
 //Event listener for large text checkbox
 // var largeText = document.getElementById("cbox2");
 // largeText.addEventListener()
-
 
 
 //Event listener to display new message when enter key is pressed
@@ -63,4 +61,37 @@ document.querySelector("body").addEventListener("click", function(event) {
   if (event.target.tagName.toLowerCase() === "button") {
       event.target.parentElement.remove()
     }
+
+// function and event listener for "Clear all messages" button
+
+
+
+// FUNCTION TO CHANGE TO DARKTHEME IF CHECKBOX IS CHECKED
+// AND TOGGLE BACK AND FORTH BETWEEN CHECKED AND UNCHECKED:
+
+document.querySelector("#darktheme_checkbox").addEventListener("change", function (checkEvt) {
+  if (checkEvt.target.checked === true) {
+    // console.log("you checked the darktheme checkbox")
+    document.body.classList.add("darktheme")
+  }
+
+  else {
+    // console.log("darktheme box is unchecked")
+    document.body.classList.toggle("darktheme")
+  }
+})
+
+// FUNCTION TO CHANGE TO LARGETEXT IF CHECKBOX IS CHECKED
+// AND TOGGLE BACK AND FORTH BETWEEN CHECKED AND UNCHECKED:
+
+document.querySelector("#largetext_checkbox").addEventListener("change", function (checkEvt) {
+  if (checkEvt.target.checked === true) {
+    // console.log("you checked the largetext checkbox")
+    document.body.classList.add("largetext")
+  }
+
+  else {
+    // console.log("largetext box is unchecked")
+    document.body.classList.toggle("largetext")
+  }
 })
