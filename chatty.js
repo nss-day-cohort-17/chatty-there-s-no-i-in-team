@@ -94,4 +94,4 @@ document.querySelector("#largetext_checkbox").addEventListener("change", functio
     // console.log("largetext box is unchecked")
     document.body.classList.toggle("largetext")
   }
-})
+}
